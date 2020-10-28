@@ -14,17 +14,17 @@
       <ion-row>
         <ion-col>
           <ion-avatar class="image-wrapper">
-            <img src="../../assets/images/giaohang.jpg" alt="" class="item-image">
+            <img src="../../assets/images/giaohang.jpg" alt="" class="item-image" >
           </ion-avatar>
           <ion-label>
-            <span>Giao hàng</span>
+            <ion-button class="deliver no-margin"  size="small" fill= "outline" (click)="onGoDeliver()">Giao hàng</ion-button>
           </ion-label>
         </ion-col>
         <ion-col>
           <ion-avatar class="image-wrapper">
             <img src="../../assets/images/datcho.jpg" alt="" class="item-image">
           </ion-avatar>
-          <ion-label> <span>Đặt chỗ</span></ion-label>
+          <ion-button class="deliver"  size="small" fill= "outline" (click)="onGoOrder()">Đặt chỗ</ion-button>
         </ion-col>
         <ion-col>
           <ion-avatar class="image-wrapper">
@@ -34,9 +34,9 @@
         </ion-col>
         <ion-col>
           <ion-avatar class="image-wrapper">
-            <img src="../../assets/images/tintuc.png" alt="" class="item-image">
+            <img src="../../assets/images/tintuc.png" alt="" class="item-image" routerLink="/news">
           </ion-avatar>
-          <ion-label>Tin tức</ion-label>
+          <ion-button class="deliver"  size="small" fill= "outline" (click)="onGoNews()">Tin tức</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -46,7 +46,7 @@
       </ion-card-header>
     
       <ion-card-content>
-        <span class="text-card">Khuyễn mãi tin tức nổi bật</span>
+        <span class="text-card">{{user.name}} </span>
       </ion-card-content>
     </ion-card>
     <ion-card class="card-last">
@@ -55,8 +55,8 @@
       </ion-card-header>
     
       <ion-card-content>
-        <span class="text-card">Khuyễn mãi tin tức nổi bật</span>
+        <span class="text-card">{{deliver}}</span>
       </ion-card-content>
     </ion-card>
-  
+    <app-explore-container [(name)] = "infoName"></app-explore-container>
 </ion-content>

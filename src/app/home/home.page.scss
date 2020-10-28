@@ -34,15 +34,15 @@ ion-icon {
 }
 ion-icon.icon-person {
     position: absolute;
-    font-size: 50px;
-    top: 4px;
+    font-size: 37px;
+    top: 12px;
     right: 28px;
     margin-right: -9px;
     padding: 13px 16px 4px 0;
 }
 ion-icon.icon-caret {
-    font-size: 20px;
-    right: 0px;
+    font-size: 17px;
+    right: 3px;
     position: absolute;
     top: 12px;
     padding: 26px 13px 13px 5px;
@@ -133,3 +133,43 @@ ion-card-header {
 .card-last {
     margin-bottom: 120px;
 }
+.header-md::after {
+    background-image: none;
+}
+:focus {
+    outline: none;
+}
+:host.button{
+    width: 68px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    border-radius: none;
+    height: 12px;
+   
+}
+.deliver {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;;
+    color: black;
+    display: flex;
+    justify-content: center;
+    text-transform: lowercase;
+    width: 72px;
+    height: 17px;
+    margin: 6px auto;
+    --border-width: 0;
+
+}
+.no-margin {
+    margin-top:0 ;
+}
+
+// ion-button.deliver:focus {
+//     --background-focused: #fff;
+// }
+// ion-button.deliver:active {
+//     --background-focused: #fff;
+//     background-color: #fff;
+   
+//     --background-activated: var(--ion-color-light,#fff);
+// }

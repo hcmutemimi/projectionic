@@ -1,0 +1,22 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Customer from order page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card >
+    <ion-card-header>
+      <ion-card-subtitle>{{data.name}}</ion-card-subtitle>
+      
+    </ion-card-header>
+  
+    <ion-card-content>
+    <ion-item *ngFor = "let item of data.order">
+        {{item}}
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+

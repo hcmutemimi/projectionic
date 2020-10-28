@@ -1,0 +1,32 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Customer from order page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-label color="secondary" stacked>Your name</ion-label>
+      <ion-input color="secondary" [(ngModel)]="name" type="text"></ion-input>
+      {{name}}
+    </ion-item>
+  </ion-list>
+  <button ion-button color="secondary" (click)="goToDeliverPage()">Next Page</button>
+  
+  <ion-card *ngIf="data" >
+    
+    <ion-card-header>
+      <ion-card-subtitle>{{data.name}}</ion-card-subtitle>
+      
+    </ion-card-header>
+  
+    <ion-card-content>
+    <ion-item *ngFor = "let item of data.order">
+        {{item}}
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+ 
+</ion-content>
