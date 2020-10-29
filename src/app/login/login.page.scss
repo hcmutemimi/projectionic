@@ -1,0 +1,38 @@
+:root {
+    --main-color: #c90a1b;
+}
+.header__wrapper {
+    display: block;
+    text-align: center;
+    height: 119px;
+    justify-content: center;
+    // align-items: center;
+   
+}
+.header__icon {
+    margin-top: 78px;
+    color: #c90a1b;
+    padding: 29px;
+    margin-bottom: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 1px solid #c90a1b;
+    position: relative;
+}
+.header__iperson {
+    position: absolute;
+    left: 8px;
+    font-size: 43px;
+    top: 6px;
+}
+.header__label {
+    font-weight: bold;
+   
+}
+
+.question {
+    font-size: 13px;
+    color: #5f5a7a;
+
+}

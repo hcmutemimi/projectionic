@@ -10,13 +10,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NewsPage } from './news/news.page';
 import { DeliverPage} from './deliver/deliver.page';
-
+import { ReactiveFormsModule } from '@angular/forms';
+// import { ExploreContainerComponent} from './explore-container/explore-container.component'
 
 @NgModule({
   declarations: [AppComponent,NewsPage,DeliverPage],
   
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    ReactiveFormsModule],
   
   providers: [
     StatusBar,
