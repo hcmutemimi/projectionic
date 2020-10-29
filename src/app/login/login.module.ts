@@ -5,11 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { LoginPageRoutingModule } from './login-routing.module';
 import { LoginPage } from './login.page';
-import { ExploreContainerComponent} from './explore-container/explore-container.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
-  declarations: [LoginPage, ExploreContainerComponent],
+  declarations: [LoginPage],
   imports: [
     CommonModule,
     FormsModule,
