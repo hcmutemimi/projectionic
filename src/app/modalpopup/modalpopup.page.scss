@@ -1,50 +1,56 @@
-
+// $h: 6px;
+// $w: 6px;
+// $br: 3px;
+// $bg: #787775;
 ion-content {
     display: flex;
     justify-content: center;
+    .ion__label-change {
+        padding-top: 62px;
+        position: absolute;
+        color: #f4f4f4;
+        font-size: 20px;
+    }
     .ion__label-updating {
         padding-top: 232px;
-        padding-left: 143px;
-        font-weight: bold;
-        font-size: 20px;
-        letter-spacing: 1px;
+        padding-left: 137px;
+        font: {
+            size: 18px;
+            weight: 600;
+          }
         color: #787775;
         position: absolute;
     }
+    @mixin mixindot ($h, $w, $br, $bg){
+        width: $w;
+        height: $h;
+        border-radius: $br;
+        background-color: $bg;
+        color: $bg;
+      }
     .dot-stretching {
         position: relative;
-        width: 6px;
-        height: 6px;
-        border-radius: 3px;
-        background-color: #787775;
-        color: #787775;
+       @include mixindot(6px,6px,3px, #787775);
         transform: scale(1.25, 1.25);
         animation: dotStretching 2s infinite ease-in;
       }
-      
       .dot-stretching::before, .dot-stretching::after {
         content: '';
         display: inline-block;
         position: absolute;
         top: 0;
       }
-      
       .dot-stretching::before {
-        width: 6px;
-        height: 6px;
-        border-radius: 3px;
-        background-color: #787775;
-        color: #787775;
-        animation: dotStretchingBefore 2s infinite ease-in;
+        @include mixindot(6px,6px,3px, #787775);
+        animation: dotStretchingBefore 1.6s infinite ease-in;
       }
-      
       .dot-stretching::after {
         width: 6px;
         height: 6px;
         border-radius: 3px;
         background-color: #787775;
         color: #787775;
-        animation: dotStretchingAfter 2s infinite ease-in;
+        animation: dotStretchingAfter 1.6s infinite ease-in;
       }
       
       @keyframes dotStretching {
@@ -66,7 +72,7 @@ ion-content {
         }
         50%,
         60% {
-          transform: translate(-10px) scale(1, 1);
+          transform: translate(-14px) scale(1, 1);
         }
         100% {
           transform: translate(0) scale(0.7, 0.7);
@@ -79,7 +85,7 @@ ion-content {
         }
         50%,
         60% {
-          transform: translate(10px) scale(1, 1);
+          transform: translate(14px) scale(1, 1);
         }
         100% {
           transform: translate(0) scale(0.7, 0.7);
@@ -96,7 +102,7 @@ ion-content {
         overflow: hidden;
     }
     .dot-animation {
-        margin-left: 10px;
+        margin-left: 7px;
     }
 }
 
