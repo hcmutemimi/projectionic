@@ -4,12 +4,7 @@
     color: #656565;
     margin-bottom: 62px;
 }
-.toolbar-background {
-    left: 0;
-}
-.ion-header ion-toolbar:first-of-type{
-    --border-width: 0 0 0px;
-}
+
 .content__wrapper {
     display: block;
 
@@ -22,7 +17,7 @@
     }
     .content__input {
         font-family: 'Open Sans', sans-serif;
-        height: 32px;
+        height: 38px;
         color: #a8afbc;
         border-radius: 6px;
         border: 1px solid #aeb2b5;
@@ -40,7 +35,7 @@
         color: white;
         margin-top: 44px;
         margin-bottom: 18px;
-        height: 40px;
+        height: 46px;
         margin-inline-start: 0;
         margin-inline-end: 0;
     }
