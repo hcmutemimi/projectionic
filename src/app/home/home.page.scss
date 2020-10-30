@@ -9,7 +9,6 @@ ion-toolbar {
     width: 100%;
     height: 72px;
     background: linear-gradient(to bottom,#f53d2d,#ff6633);
-    // background-image: url(../../assets/images/shopee.png);
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
@@ -81,7 +80,7 @@ img {
 }
 ion-label {
     font-size: 14px;
-    font-family: 'Open Sans', sans-serif;;
+    font-family: 'Open Sans', sans-serif;
     color: black;
     display: flex;
     justify-content: center;
@@ -145,7 +144,6 @@ ion-card-header {
     margin-inline-end: 0px;
     border-radius: none;
     height: 12px;
-   
 }
 .deliver {
     font-size: 14px;
@@ -158,18 +156,7 @@ ion-card-header {
     height: 17px;
     margin: 6px auto;
     --border-width: 0;
-
 }
 .no-margin {
     margin-top:0 ;
 }
-
-// ion-button.deliver:focus {
-//     --background-focused: #fff;
-// }
-// ion-button.deliver:active {
-//     --background-focused: #fff;
-//     background-color: #fff;
-   
-//     --background-activated: var(--ion-color-light,#fff);
-// }

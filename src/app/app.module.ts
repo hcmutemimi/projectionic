@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
 import { NewsPage } from './news/news.page';
 import { DeliverPage} from './deliver/deliver.page';
 import { ReactiveFormsModule } from '@angular/forms';
-// import { ExploreContainerComponent} from './explore-container/explore-container.component'
+import {ModalpopupPageModule} from './modalpopup/modalpopup.module';
 
 @NgModule({
   declarations: [AppComponent,NewsPage,DeliverPage],
@@ -21,7 +21,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    ReactiveFormsModule],
+    ReactiveFormsModule,
+    ModalpopupPageModule
+  ],
   
   providers: [
     StatusBar,

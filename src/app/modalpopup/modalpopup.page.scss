@@ -1,0 +1,106 @@
+
+ion-content {
+    display: flex;
+    justify-content: center;
+    .ion__label-updating {
+        padding-top: 232px;
+        padding-left: 143px;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: #787775;
+        position: absolute;
+    }
+    .dot-stretching {
+        position: relative;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: #787775;
+        color: #787775;
+        transform: scale(1.25, 1.25);
+        animation: dotStretching 2s infinite ease-in;
+      }
+      
+      .dot-stretching::before, .dot-stretching::after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+      }
+      
+      .dot-stretching::before {
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: #787775;
+        color: #787775;
+        animation: dotStretchingBefore 2s infinite ease-in;
+      }
+      
+      .dot-stretching::after {
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: #787775;
+        color: #787775;
+        animation: dotStretchingAfter 2s infinite ease-in;
+      }
+      
+      @keyframes dotStretching {
+        0% {
+          transform: scale(1.25, 1.25);
+        }
+        50%,
+        60% {
+          transform: scale(0.8, 0.8);
+        }
+        100% {
+          transform: scale(1.25, 1.25);
+        }
+      }
+      
+      @keyframes dotStretchingBefore {
+        0% {
+          transform: translate(0) scale(0.7, 0.7);
+        }
+        50%,
+        60% {
+          transform: translate(-10px) scale(1, 1);
+        }
+        100% {
+          transform: translate(0) scale(0.7, 0.7);
+        }
+      }
+      
+      @keyframes dotStretchingAfter {
+        0% {
+          transform: translate(0) scale(0.7, 0.7);
+        }
+        50%,
+        60% {
+          transform: translate(10px) scale(1, 1);
+        }
+        100% {
+          transform: translate(0) scale(0.7, 0.7);
+        }
+      }
+    .stage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 15rem 0;
+        padding-left: 158px;
+        margin: 0 -5%;
+        overflow: hidden;
+    }
+    .dot-animation {
+        margin-left: 10px;
+    }
+}
+
+  
+
+
+  

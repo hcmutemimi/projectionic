@@ -5,6 +5,10 @@ import { DataResolverService } from './resolver/data-resolver.service';
 const routes: Routes = [
   {
     path: '',
+    loadChildren: () => import('./changename/changename.module').then( m => m.ChangenamePageModule)
+  },
+  {
+    path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
@@ -32,6 +36,11 @@ const routes: Routes = [
     path: 'news',
     loadChildren: () => import('./news/news.module').then( m => m.NewsPageModule)
   },
+  {
+    path: 'modalpopup',
+    loadChildren: () => import('./modalpopup/modalpopup.module').then( m => m.ModalpopupPageModule)
+  },
+ 
 
 ];
 @NgModule({
