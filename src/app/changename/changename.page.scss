@@ -1,11 +1,18 @@
+.icon-back {
+    font-size: 20px;
+    margin-top: 16px;
+    color: #656565;
+    margin-bottom: 62px;
+}
+.toolbar-background {
+    left: 0;
+}
+.ion-header ion-toolbar:first-of-type{
+    --border-width: 0 0 0px;
+}
 .content__wrapper {
     display: block;
-    
-    .content__icon-back {
-        font-size: 20px;
-        margin-top: 32px;
-        margin-bottom: 62px;
-    }
+
     .content__label-input {
         color: #a8afbc;
         font-size: 12px;
